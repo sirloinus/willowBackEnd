@@ -15,6 +15,11 @@ class Api::V1::MarkersController < ApplicationController
         render json: @markers
     end
 
+    def destroy
+        @marker = Marker.find(params[:id])
+        @marker.destroy
+    end
+
     private
     def marker_params
         params.require(:marker).permit(:user_id, :longitude, :latitude, :title, :description)

@@ -15,6 +15,11 @@ class Api::V1::AnalysedPhotosController < ApplicationController
         render json: @analysed_photos
     end
 
+    def destroy
+        @analysed_photo = AnalysedPhoto.find(params[:id])
+        @analysed_photo.destroy
+    end
+
     private
     def analysed_photo_params
         params.require(:analysed_photo).permit(:user_id, :photoUri, :labels)

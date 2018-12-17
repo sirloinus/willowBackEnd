@@ -25,7 +25,7 @@ class Api::V1::UsersController < ApplicationController
   def destroy
     @user = User.find_by(id: params[:id])
     if @user
-      @user.destroy()
+      @user.destroy
       render json: {message: 'User successfully deleted.'}
     else
       render json: {error: 'User not found.'}, status: 400

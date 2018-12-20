@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first) 
 
 User.create(username: 'Amaz') do |user|
-    Marker.create(user: user, longitude: 1111, latitude: 2222, title: 'home', description: 'nice n cosy')
-    AnalysedPhoto.create(user: user, photoUri: 'test', labels: '[{"name": "AMLAMSAKDFNKLAWNSDFAKLSN", "value": 30}, {"name": "jfbdfjkhdbsl", "value": 2}]' )
+    Marker.create(user: user, title: "King Henry's Mound", description: 'nice lil place', latitude: 51.444937, longitude: -0.294785)
+    Marker.create(user: user, title: "Rhino", description: 'A tree trunk that looks like a Rhino!', latitude: 51.438596, longitude: -0.287324)
+    # AnalysedPhoto.create(user: user, photoUri: 'test', labels: '[{"name": "AMLAMSAKDFNKLAWNSDFAKLSN", "value": 30}, {"name": "jfbdfjkhdbsl", "value": 2}]' )
 end
 
 

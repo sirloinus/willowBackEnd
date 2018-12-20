@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 2018_12_17_155444) do
 
   create_table "markers", force: :cascade do |t|
     t.bigint "user_id"
-    t.integer "latitude"
-    t.integer "longitude"
+    t.float "latitude"
+    t.float "longitude"
     t.string "title"
     t.string "description"
     t.datetime "created_at", null: false

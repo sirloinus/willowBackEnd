@@ -1,24 +1,10 @@
-# README
+# willow
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+The ultimate companion for nature lovers to take on their walks to identify plants and log interesting locations.
 
-* Ruby version
+- Back-end and API built with Ruby on Rails and deployed on Heroku.
+- App built in Javascript with React-Native using Expo (https://github.com/sirloinus/willow)
+- Cloud Vision machine learning to identify plants using native camera. 
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Demo-link: https://youtu.be/K7PPBzEMz84
